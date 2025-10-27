@@ -1,4 +1,4 @@
-# Express REST API Project + MongoDB
+# Express REST API Project + MongoDB (Mongoose)
 
 ## Опис
 
