@@ -28,7 +28,6 @@ export const registerHandler = async (req, res) => {
       return res.status(400).send('Missing credentials')
     }
 
-    // Перевірка наявного користувача через Mongoose
     const existingUser = await User.findOne({ username })
     if (existingUser) {
       return res.status(400).send('User already exists')

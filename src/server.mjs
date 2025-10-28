@@ -48,9 +48,9 @@ try {
   app.use(passport.session());
   app.use(router);
 
-  app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 } catch (err) {
-  console.error('❌ Failed to start server:', err);
+  console.error('Failed to start server:', err);
   process.exit(1);
 }
 

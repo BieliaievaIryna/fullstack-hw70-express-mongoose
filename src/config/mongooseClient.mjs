@@ -7,8 +7,8 @@ export async function connectToDB() {
   try {
     await mongoose.connect(process.env.DB_URI, {
       dbName: 'myapp_db',
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      autoIndex: true,
+      bufferCommands: false
     });
 
     console.log('✅ Connected to MongoDB Atlas via Mongoose');
